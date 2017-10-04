@@ -9,8 +9,7 @@ RUN apk add apache-ant --update-cache \
 	--allow-untrusted
 RUN apk add --update curl && \
     rm -rf /var/cache/apk/*
-RUN apk add nodejs
-RUN apk add npm
+RUN apk add --update nodejs nodejs-npm
 
 ENTRYPOINT ["/usr/bin/curl"]
 
