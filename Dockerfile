@@ -2,7 +2,7 @@
 FROM alpine
 MAINTAINER Ben Edwards <ben@edwards.nz>
 RUN apk update
-RUN apk add bash
+RUN apk add bash git openssh
 RUN apk add openjdk8
 RUN apk add apache-ant --update-cache \
 	--repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ \
